@@ -19,7 +19,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
-    min-height: 200vh;
+    min-height: 500vh;
 }
 /*navbar*/
 .navbar{
@@ -185,6 +185,7 @@ body{
     line-height: 1.6;
 
 }
+/*Menu Section*/
 
 .menu{
     color:#ffffff;
@@ -230,6 +231,57 @@ body{
     margin: 1rem;
     font-weight: 100;
 }
+/*Kontak Section*/
+.contact{
+    color:#ffffff;
+    padding: 8rem 7% 1.4rem;
+}
+.contact h2{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.contact span{
+    color: var(--primary);
+}
+.contact .content-contact{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;
+    background-color: #222;
+
+}
+.contact .content-contact .contact-form{
+    flex: 1;
+    color: #fff;
+    margin: 2rem ;
+}
+.contact .content-contact .contact-form .contact-input{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.contact .content-contact .contact-form .contact-input .input-group {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: #010101;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.contact .content-contact .contact-form .contact-input .input-group input{
+    flex: 1;
+    padding: 1rem;
+    background-color: rgba(122, 122, 122, 0);
+    color: white;
+
+
+}
+
+
 
 /*media queries*/
 /*laptop*/

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27a9cdef-8c5e-4dc8-bc1a-a0a010c89def" name="Changes" comment="Update Menu">
+      <change beforePath="$PROJECT_DIR$/Website Todo List/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Website Todo List/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/css/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/css/homepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/js/script.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ragelexsus&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ragelexsus/belajar-website.git&quot;,
+    &quot;accountId&quot;: &quot;2ce75f8a-8140-457a-bcf8-d4a04d25b82a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="36hqmpj0KhIB1Arioau09FuUReX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Website Kedai Kopi/img" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27a9cdef-8c5e-4dc8-bc1a-a0a010c89def" name="Changes" comment="" />
+      <created>1765469313219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765469313219</updated>
+      <workItem from="1765469314665" duration="4276000" />
+      <workItem from="1765473615240" duration="133000" />
+      <workItem from="1765546228666" duration="334000" />
+      <workItem from="1765546572983" duration="53000" />
+      <workItem from="1765546799416" duration="2686000" />
+      <workItem from="1765710356851" duration="860000" />
+      <workItem from="1765711243812" duration="458000" />
+      <workItem from="1765712894849" duration="55000" />
+      <workItem from="1765712951962" duration="8731000" />
+      <workItem from="1765898879285" duration="5004000" />
+      <workItem from="1765985952123" duration="1520000" />
+      <workItem from="1766064665235" duration="6909000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update Menu">
+      <option name="closed" value="true" />
+      <created>1765473722277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765473722277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Menu" />
+  </component>
+</project>

@@ -1,3 +1,6 @@
+:root{
+    --biru: #137FEC;
+}
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,4 +13,101 @@
 body{
     background-color: white;
     color: black;
+}
+.navbar{
+    background-color: rgba(255, 255, 255, 0.50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+
+
+}
+.navbar-extra{
+    display: none;
+}
+.navbar a{
+    color: #010101;
+    font-weight: 600;
+}
+.navbar .navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.navbar .navbar-nav a, button{
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+.navbar .navbar-nav a::after{
+    content: "";
+    display: block;
+    border-bottom: 0.1rem solid var(--biru);
+    padding-bottom: 0.2rem;
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(1);
+}
+.navbar .navbar-nav #order{
+   color: white;
+    background-color: var(--biru);
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+
+}
+
+/*media queries*/
+
+/*laptop*/
+@media (max-width: 1366px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+/*tablet*/
+@media (max-width: 756px) {
+    html{
+        font-size: 55%;
+    }
+    .navbar-extra{
+        display: block;
+    }
+    .navbar .navbar-nav{
+        position:absolute;
+        top:100%;
+        right: -100%;
+        background-color: #010101;
+        height: 100vh;
+        width: 30rem;
+        transition: 0.2s;
+
+    }
+    .navbar .navbar-nav a{
+        display: block;
+        color: white;
+        margin: 1rem;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+        transition: 0.2s;
+    }
+}
+/*Handphone*/
+@media (max-width: 450px) {
+
 }

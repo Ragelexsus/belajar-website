@@ -38,6 +38,9 @@ function buatmemo(){
         alert("Silahkan Isi Judul dan Isi Memo");
         return;
     }
+    if (document.getElementById('reminder') != null) {
+        document.getElementById('reminder').remove();
+    }
 
     const div = document.createElement('div');
     div.classList.add('card-memo');
@@ -67,13 +70,14 @@ function buatmemo(){
         checkmemo()
     })
 
+
+
     div.append(judul,description, hapus);
     listmemo.append(div);
 
     judulmemo.value="";
     isimemo.value="";
 
-    document.getElementById('reminder').remove()
 
 
 }

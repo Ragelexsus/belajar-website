@@ -1,0 +1,123 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    color: #ffffff;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    margin:2rem auto;
+    max-width: 50rem;
+}
+.wrapper .title{
+    padding: 2rem;
+    background-color: rgba(1, 1, 1, 0.65);
+    border-radius: 15px;
+}
+.wrapper .title{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .title .titles {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.wrapper .title button{
+    padding: 0 1rem;
+    border-radius: 15px;
+}
+/*content*/
+.wrapper .content{
+    max-width: 50rem;
+    padding: 1rem;
+    background-color: rgba(1, 1, 1, 0.65);
+    border-radius: 15px;
+}
+.wrapper .content .list-memo{
+    margin: 1rem 0;
+}
+/*modal memo*/
+.modal-memo{
+    display: none;
+    position: fixed;
+    background-color: rgba(1, 1, 1, 0.5);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+.modal-memo.active{
+    display: block;
+}
+.modal-memo .memo-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgba(33, 33, 33, 0.51);
+    margin: 3rem auto auto;
+    border-radius: 15px;
+
+    width: 50%;
+}
+.modal-memo .memo-form .title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.modal-memo .memo-form .title button{
+    padding: 0 1rem;
+    border-radius: 15px;
+}
+.modal-memo .memo-form .judul-memo, .modal-memo .memo-form .isi-memo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.modal-memo .memo-form input, .modal-memo .memo-form textarea{
+    padding: 0.8rem;
+    border-radius: 15px;
+    resize: none;
+
+}
+/*card memo*/
+.wrapper .content .list-memo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.wrapper .content .list-memo .card-memo{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    color: black;
+    border-radius: 15px;
+    gap: 10px;
+
+}
+
+.wrapper .content .list-memo .judul-memo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .content .list-memo p{
+    font-size: 0.8rem;
+
+}
+.wrapper .content .list-memo .card-memo button{
+   display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    border-radius: 15px;
+
+}

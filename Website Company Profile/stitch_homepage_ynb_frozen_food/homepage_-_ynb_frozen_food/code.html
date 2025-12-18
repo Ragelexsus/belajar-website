@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YnB Frozen Food - Homepage</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 flex flex-1 justify-center py-3">
+<div class="layout-content-container flex w-full max-w-[960px] flex-1 items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3 text-slate-900 dark:text-white">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">ac_unit</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">YnB Frozen Food</h2>
+</div>
+<!-- Desktop Menu -->
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<div class="flex items-center gap-6">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Products</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate">Order Now</span>
+</button>
+</div>
+<!-- Mobile Menu Button (Visual Only for this demo) -->
+<div class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined cursor-pointer">menu</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-8 text-center relative overflow-hidden group shadow-lg" data-alt="Close up of delicious frozen dumplings and fresh ingredients on a wooden table" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQy43hFPjQQMzJLSAY0njVVA4U91ZZytADqrBh1opphuwnPBRWIPv6H5f2vMmu3RmsNkghjuptvFsP7Ks3SCjmRvUKQD-UnBpV7Wa8F-9n7WVjhuSQzFJ9V3-nn4i8KicatCQelN596RF8NVoyXXBOQnNpPq2oUMSQ27fa6uddQdK2tV9GjOdlNzSRYISG7lafYkrccZbistBu3LGQvwsOrdtKxlTirlZw3G_gC5MYIXP8LEBUNYp0C43qlBpXnYtQKjvslgktsxA");'>
+<div class="flex flex-col gap-2 z-10 max-w-[700px]">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl drop-shadow-md">
+                                            Freshness Locked in Every Bite
+                                        </h1>
+<h2 class="text-gray-100 text-base font-normal leading-relaxed @[480px]:text-lg max-w-lg mx-auto drop-shadow-sm">
+                                            Premium frozen foods for quick, delicious meals at home. Taste the difference quality makes.
+                                        </h2>
+</div>
+<button class="z-10 flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg transition-transform hover:scale-105">
+<span class="truncate">Explore Our Menu</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="w-full bg-white dark:bg-gray-900 py-10">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col gap-10 px-4 @container">
+<div class="flex flex-col gap-2">
+<h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight @[480px]:text-4xl max-w-[720px]">
+                                    Why Choose YnB?
+                                </h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg">We prioritize quality from farm to freezer.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 p-6 flex-col hover:shadow-md transition-shadow">
+<div class="text-primary bg-blue-50 dark:bg-blue-900/20 w-12 h-12 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-[28px]">ac_unit</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Quick Freeze Technology</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Advanced rapid freezing ensures nutrients and flavor are locked in instantly.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 p-6 flex-col hover:shadow-md transition-shadow">
+<div class="text-primary bg-blue-50 dark:bg-blue-900/20 w-12 h-12 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-[28px]">local_shipping</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Fast Delivery</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Our specialized cold-chain logistics deliver fresh to your doorstep.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-1 gap-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-gray-800 p-6 flex-col hover:shadow-md transition-shadow">
+<div class="text-primary bg-blue-50 dark:bg-blue-900/20 w-12 h-12 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Premium Ingredients</h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">We source directly from trusted local farms with strict quality checks.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Section -->
+<section class="w-full py-5">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Section Header -->
+<div class="flex items-center justify-between px-4 pb-6 pt-5">
+<h2 class="text-slate-900 dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em]">Our Customer Favorites</h2>
+<a class="text-primary font-bold text-sm hover:underline flex items-center gap-1" href="#">
+                                View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-4 pb-10">
+<!-- Product 1 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all" data-alt="Golden crispy chicken nuggets piled in a bowl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4picST_FBGOQ38z1nT4hhs87Vu7qSyHrjbgk4L4Sn8J-6MKbvwD-uUYPVYxam9N8k8uSs3oGQc1wt3FrAHWY9sWx6V5x3xoAj02DupbKJHIAVUPu4ILeSZXFOYXLO8nlzj0ht0RtoGDGM485T1BRl6m-iGYZ_0A0b042UxFkYu_IKV2HSVq7dSgZoyPN4uWiBe0yxd1klO4itX1hq0kQWM0l6McGdZy92Kx8szkrm1zqviYDqRu5n7iCNZh6SrbYTYjMud9BmZdI");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal group-hover:text-primary transition-colors">Crispy Chicken Nuggets</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Family favorite snack</p>
+<p class="text-slate-900 dark:text-gray-200 text-sm font-bold mt-1">$8.99</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all" data-alt="Fresh vegetable spring rolls on a plate" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDl-NUdQE5DP-cQDNjG_NldfpuEOv7-xCYIMbY3YeLfnGvO09Ynyo-2eAXmK2JGUOCTsEg7b7tjL8mT1FqU6Jh39JBRzV0r9xcNH2CyeabaCnx6VUHxEQ7OpSNyN4tIGdUTOdpPFKQMrQPHWwrn9-C1ZfFppbiIv0f3LJopW3-QihU0DE9RQNLl4tRp5ipiefBS6v4H8NBQqi8tnFp6VKSi89tksMDe1yzACkkGuK75p0EL_LVwnfPmYbP9DRsiUpHrisoj-Dibbc8");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal group-hover:text-primary transition-colors">Vegetable Spring Rolls</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Perfect party appetizer</p>
+<p class="text-slate-900 dark:text-gray-200 text-sm font-bold mt-1">$6.50</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all" data-alt="Close up of frozen mixed berries with frost" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCog2_sprCPgHiygaXiQHKm_GGuyOXPhLJmeLyTcMMR98g9Fm0xFMd5-es_v0GDEyntmrAHQxk6CiAi7X3MwVnI1TGYS0w851b3znUEuzayfU_pqR9ChbEMjJ8D01ofoRBToHbX4H9UTM-iBv-ZoZeGCrc9jT2mubMB35W4O-WzWtUQy7BIRIwghXX2xZKMBtozGZWutKWVK2nMwPk4ucYpLJW3YLEaYZMQzYQwhE5rRwO0kbrFcjxntQQVNhEhVNmilHwJSh9yQ7o");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal group-hover:text-primary transition-colors">Frozen Mixed Berries</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Smoothie ready pack</p>
+<p class="text-slate-900 dark:text-gray-200 text-sm font-bold mt-1">$12.00</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl overflow-hidden shadow-sm group-hover:shadow-md transition-all" data-alt="Raw marinated beef slices ready for grilling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAc_qt_TAJIBJCcy5XsshKxxwOZFkVPoICJb2VNKGLToLFSXox-kk7sJoX4cZLs-7SyAX2MC9PKhfjCBKKubPlkrJPdiazNg2hKYMn2i3Q6t-__FhLF9ObchUtzJiA8P8ZGr8ytziOcuWkv7VAJCjxqTY-a31BXVICq5wUp1sRbIf5Qj6E69nlLkIwBLzLKTFPveMaRV51nMK1lYmmIx-U503Z9kLnikuCwuB6LDXhv1utQUoFTbp8ZC-Of-HqUS68MpSehQ3-cb8");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal group-hover:text-primary transition-colors">Marinated Beef Slices</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Ready to cook BBQ</p>
+<p class="text-slate-900 dark:text-gray-200 text-sm font-bold mt-1">$15.99</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About/Trust Section -->
+<section class="w-full bg-primary/5 dark:bg-gray-800 py-12 md:py-20">
+<div class="layout-container flex justify-center px-4 md:px-40">
+<div class="layout-content-container max-w-[960px] flex flex-col md:flex-row gap-10 items-center">
+<div class="flex-1 flex flex-col gap-6">
+<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">Bringing the Restaurant Experience Home</h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                            Since 2015, YnB Frozen Food has been dedicated to changing the perception of frozen meals. We don't just freeze food; we preserve the moment of peak freshness.
+                        </p>
+<div class="flex gap-4 pt-2">
+<button class="flex items-center justify-center rounded-lg h-10 px-6 border-2 border-primary text-primary hover:bg-primary hover:text-white dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-primary transition-all font-bold text-sm">
+                                Read Our Story
+                            </button>
+</div>
+</div>
+<div class="flex-1 w-full">
+<div class="w-full aspect-video rounded-xl bg-cover bg-center shadow-lg" data-alt="A happy family eating dinner together at a table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrJPTza5KERr1qVeotoE4sZ9BjrY9SPsowkmTseXORD7LhSWY9o-TnA34DstOpV5CTbX9eBWJANZfK-9ygg6K23WA4nf3fEKf0SXsnC_ElrYe_xvzjrQgFzGSx6EwBM6ejLMTL3jHKalck1jMcF4SRWEJiIyuEy4MBXBp2LzxhNDfFCxchi1O1qzrx-pJ5MJzvrFiNhYUGxM4-Nwd7QrJJP1uYx8zAOAKBMSG8L6j1wS1sv9PEHO0fwoSShULfSVb8laBlM3AHq_M");'>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800 py-12">
+<div class="layout-container flex justify-center px-4 md:px-40">
+<div class="layout-content-container max-w-[960px] w-full grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Brand -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-slate-900 dark:text-white">
+<div class="text-primary">
+<span class="material-symbols-outlined text-2xl">ac_unit</span>
+</div>
+<span class="font-bold text-lg">YnB Frozen Food</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Delicious moments, frozen in time.</p>
+<div class="flex gap-4 mt-2">
+<!-- Social Placeholders -->
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">thumb_up</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">photo_camera</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+</div>
+</div>
+<!-- Links -->
+<div class="flex flex-col gap-3">
+<h3 class="font-bold text-slate-900 dark:text-white text-base">Shop</h3>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">New Arrivals</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">Best Sellers</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">Vegetarian</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">Meat &amp; Poultry</a>
+</div>
+<!-- Company -->
+<div class="flex flex-col gap-3">
+<h3 class="font-bold text-slate-900 dark:text-white text-base">Company</h3>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">About Us</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">Careers</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary" href="#">Terms of Service</a>
+</div>
+<!-- Contact -->
+<div class="flex flex-col gap-3">
+<h3 class="font-bold text-slate-900 dark:text-white text-base">Contact</h3>
+<div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+<span class="material-symbols-outlined text-lg">mail</span>
+<span>hello@ynbfrozen.com</span>
+</div>
+<div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+<span class="material-symbols-outlined text-lg">call</span>
+<span>+1 (555) 123-4567</span>
+</div>
+<div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span>New York, NY</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center border-t border-gray-100 dark:border-gray-800 pt-8">
+<p class="text-slate-400 dark:text-slate-600 text-sm">© 2023 YnB Frozen Food. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

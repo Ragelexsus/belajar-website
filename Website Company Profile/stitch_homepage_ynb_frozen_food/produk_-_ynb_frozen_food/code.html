@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products - YnB Frozen Food</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e5e7eb] dark:border-b-gray-800 bg-white dark:bg-[#101922] px-10 py-3 shadow-sm">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">YnB Frozen Food</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Products</a>
+<a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">shopping_cart</span>
+                            Cart (0)
+                        </span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f0f2f4] hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-[#111418] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="w-full">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-gray-900 min-h-[260px] relative" data-alt="Close up of frosty frozen berries and ice textures" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDcRusC83VFDXGeoxyF7GHtFF0F72UhH1SUbE_G7avVEWnXkJXppcYvitnqLv2ILEihoY2XGew6DRpt7cMtvnOg_ZIlneCbecYS7EKKsjWccLUF_3JVN7etC6vO0ql0KaVW3Q2cMWIKktAA0olZJsojqXBOfTqdPbnELuTebtskEyHgmxQ_zcGwF2594Vcp7jRq7qJg_LDv257MgU7XAeGciIb1AucOCAXiAcwc-2SDF7JeoQQWEhddiYk3rD4ELqTmkF8fJra_uxo");'>
+<div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+<div class="layout-content-container flex flex-col max-w-[1280px] w-full mx-auto px-4 md:px-10 pb-8 relative z-10">
+<h1 class="text-white tracking-light text-4xl md:text-5xl font-bold leading-tight mb-2">Premium Frozen Delights</h1>
+<p class="text-gray-200 text-lg max-w-xl">Quality frozen foods delivered straight to your freezer. Freshness locked in every pack.</p>
+</div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="layout-container flex grow flex-col w-full max-w-[1280px] mx-auto px-4 md:px-10 py-8">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 mb-8">
+<a class="text-[#617589] dark:text-gray-400 text-sm font-medium leading-normal hover:text-primary" href="#">Home</a>
+<span class="text-[#617589] dark:text-gray-400 text-sm font-medium leading-normal">/</span>
+<span class="text-[#111418] dark:text-white text-sm font-bold leading-normal">Products</span>
+</div>
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Sidebar (Filters) -->
+<aside class="w-full lg:w-[280px] shrink-0 space-y-8">
+<!-- Search -->
+<div class="rounded-xl bg-white dark:bg-[#1e293b] p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<label class="flex flex-col h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-[#dbe0e6] dark:border-gray-600 focus-within:border-primary overflow-hidden">
+<div class="text-[#617589] dark:text-gray-400 flex bg-white dark:bg-[#1e293b] items-center justify-center pl-4 pr-2">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none bg-white dark:bg-[#1e293b] text-[#111418] dark:text-white focus:outline-0 border-none h-full placeholder:text-[#617589] dark:placeholder:text-gray-500 text-sm font-normal leading-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+</div>
+<!-- Categories -->
+<div class="rounded-xl bg-white dark:bg-[#1e293b] p-5 shadow-sm border border-gray-100 dark:border-gray-800">
+<h3 class="text-lg font-bold text-[#111418] dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">category</span>
+                            Categories
+                        </h3>
+<div class="flex flex-col gap-2">
+<!-- Radio Item 1 -->
+<label class="group flex items-center gap-3 rounded-lg p-2 hover:bg-background-light dark:hover:bg-gray-700 cursor-pointer transition-colors">
+<input checked="" class="peer h-4 w-4 border-2 border-[#dbe0e6] dark:border-gray-500 bg-transparent text-primary focus:ring-primary checked:border-primary checked:bg-primary focus:ring-offset-0" name="category" type="radio"/>
+<span class="text-[#111418] dark:text-gray-200 text-sm font-medium peer-checked:font-bold peer-checked:text-primary">All Products</span>
+</label>
+<!-- Radio Item 2 -->
+<label class="group flex items-center gap-3 rounded-lg p-2 hover:bg-background-light dark:hover:bg-gray-700 cursor-pointer transition-colors">
+<input class="peer h-4 w-4 border-2 border-[#dbe0e6] dark:border-gray-500 bg-transparent text-primary focus:ring-primary checked:border-primary checked:bg-primary focus:ring-offset-0" name="category" type="radio"/>
+<span class="text-[#111418] dark:text-gray-200 text-sm font-medium peer-checked:font-bold peer-checked:text-primary">Chicken Series</span>
+</label>
+<!-- Radio Item 3 -->
+<label class="group flex items-center gap-3 rounded-lg p-2 hover:bg-background-light dark:hover:bg-gray-700 cursor-pointer transition-colors">
+<input class="peer h-4 w-4 border-2 border-[#dbe0e6] dark:border-gray-500 bg-transparent text-primary focus:ring-primary checked:border-primary checked:bg-primary focus:ring-offset-0" name="category" type="radio"/>
+<span class="text-[#111418] dark:text-gray-200 text-sm font-medium peer-checked:font-bold peer-checked:text-primary">Beef Series</span>
+</label>
+<!-- Radio Item 4 -->
+<label class="group flex items-center gap-3 rounded-lg p-2 hover:bg-background-light dark:hover:bg-gray-700 cursor-pointer transition-colors">
+<input class="peer h-4 w-4 border-2 border-[#dbe0e6] dark:border-gray-500 bg-transparent text-primary focus:ring-primary checked:border-primary checked:bg-primary focus:ring-offset-0" name="category" type="radio"/>
+<span class="text-[#111418] dark:text-gray-200 text-sm font-medium peer-checked:font-bold peer-checked:text-primary">Seafood</span>
+</label>
+<!-- Radio Item 5 -->
+<label class="group flex items-center gap-3 rounded-lg p-2 hover:bg-background-light dark:hover:bg-gray-700 cursor-pointer transition-colors">
+<input class="peer h-4 w-4 border-2 border-[#dbe0e6] dark:border-gray-500 bg-transparent text-primary focus:ring-primary checked:border-primary checked:bg-primary focus:ring-offset-0" name="category" type="radio"/>
+<span class="text-[#111418] dark:text-gray-200 text-sm font-medium peer-checked:font-bold peer-checked:text-primary">Finger Foods</span>
+</label>
+<!-- Radio Item 6 -->
+<label class="group flex items-center gap-3 rounded-lg p-2 hover:bg-background-light dark:hover:bg-gray-700 cursor-pointer transition-colors">
+<input class="peer h-4 w-4 border-2 border-[#dbe0e6] dark:border-gray-500 bg-transparent text-primary focus:ring-primary checked:border-primary checked:bg-primary focus:ring-offset-0" name="category" type="radio"/>
+<span class="text-[#111418] dark:text-gray-200 text-sm font-medium peer-checked:font-bold peer-checked:text-primary">Ready-to-Eat</span>
+</label>
+</div>
+</div>
+<!-- Promo Banner Sidebar -->
+<div class="rounded-xl overflow-hidden relative min-h-[200px] flex items-end p-4" data-alt="Blue abstract frozen pattern" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtGhyyhd2qcMltlqwuzF55xVnxedK5zACXs4syq3VDGkyXidVru8kn73mFSKdCP82sHndwBgH1v9plM4wzRMCNFvHN3lqErTNxqIaQ3n-MRgqQcPba5fhw41xbMC3jCXeM8XCg42J0lEsxAPHnZaolNNKUGXePINYtOA-n1carc-V8hwl0XMNEugF-hOd8hBY_pDJwMPPqAR_sRelkaXhP52P7STOn3-k9xrzO7HZm6amdDzeO_FRbjHOy-8KSE6htRAM6Euls1ks'); background-size: cover;">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="relative z-10">
+<p class="text-white text-xs font-bold uppercase tracking-wider mb-1">Weekly Deal</p>
+<h4 class="text-white text-xl font-bold mb-2">20% Off All Seafood</h4>
+<button class="bg-primary hover:bg-blue-600 text-white text-xs font-bold py-2 px-4 rounded-lg transition-colors">Shop Now</button>
+</div>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<main class="flex-1">
+<div class="flex items-center justify-between mb-6">
+<p class="text-sm text-[#617589] dark:text-gray-400">Showing <span class="font-bold text-[#111418] dark:text-white">9</span> results for "All Products"</p>
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium text-[#617589] dark:text-gray-400">Sort by:</span>
+<select class="bg-transparent border-none text-sm font-bold text-[#111418] dark:text-white focus:ring-0 cursor-pointer p-0 pr-6">
+<option>Popular</option>
+<option>Newest</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Product Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<div class="absolute top-3 left-3 z-10 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wide">Best Seller</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden crispy chicken nuggets on a plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8v3Ug12WWpt6-OvPyCsefUl-BIw1FNYItetg_zwQQKN7WO0TmO-79SR-SMwBwV6Twiw-0B7jC1O-F2-BNr-O-wEHlrdRJ6HzZrdZLWpa0nAG9O-dRstcwYGP173Z7EGvK4yCYCpRafoTyatv3ovZPVphnOFooLKuj-Mz6ML2xVramPaLnW1nBT5E_D_Ta-4CiMam6RR-78FfUtL9g_F0oNncLF_Q0DwMH-hINZwuZrx-RzUN8JT5Bhb27i-vO3sKyDD3PksspQS0"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Chicken Series</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Crispy Chicken Nuggets</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Made from premium breast meat, coated in golden tempura batter. 1kg pack.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$12.50</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<div class="absolute top-3 left-3 z-10 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wide">New</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Raw beef meatballs seasoned with herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonRfRL5lITD3nJSKqnw-IpvhNN8kzj2fgQQZU8N1g8jaGgwOfQeI8U6gBqMMjlKaeHHh-bbOrswM8ZmsfRDFqBMYuxdvbNs12DXdyYP_MGIvM9acXCmU4useoBazSgMAvl7ZVh_okhMdaRImYQuZ1XtLLTiD8WnGWbUdUQbKR2y2HJNoIb2i_jmvY9KEUAkEn5C8QdJD9NX2Cf9nS2yRReOHlWZ9uCbd2_uI7HxuoaPpjwuWZgFMy6Vv_SC9s8Kv8jZpxFwYAxAM"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Beef Series</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Premium Beef Meatballs</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Juicy and savory beef balls, perfect for soup or pasta. 500g pack.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$15.00</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Assorted dim sum in a bamboo steamer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaWs-Lp_9h-8Apr5UF7lE-V-QzRzjVgKm9CeqRst2yStsXa9chlLkzKa3mqM6_FIAZhtrFnNw6SjDT3dasUay4SoDtrT4WSNNgvkVW75v9y13w_Ga5hVqNLOLP3Xx0t-xI3PTNeRa5TredV4eHJG7QT7K7YtPTcsD3X_GS8EKM19m8vUiJLMDcwbYny88X7dPu4FxykqiI6YkB-9VqfyEQr5KwtsT315DX16I3KXZDXndESbWSTyZZY3c3RRWNu4Ziyg2DPCJpSEw"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Ready-to-Eat</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Dim Sum Variety Pack</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Assorted dumplings including shrimp har gow and chicken siu mai. 12 pcs.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$18.90</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fresh raw shrimp on ice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkYGjnNA_VR5_VqRxIDCdqqyycmmbxFTKJ020g4ra667u3Exoj7q3P8_0XaCUXTXSDAx0y5iQ77gd_Fn4Piy9aIw_ji3136x6wrW1AN_gDcvF1ZPCQlWmPchlj_5mG2uw6Xb5MAMBt5_ugi-leAzPyauEDSBBwFGBI9D75WSQ2zwINu1QZHCKgL77tSxdL1BrWC53mxCKe4pxxmaJ3VjtEcIw0DMhJ3akVhrk_NsI-m_F9Ks1-kBMOdzPT4hjffxgKFu9ntAiC5TU"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Seafood</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Tiger Prawns XL</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Flash frozen to preserve ocean freshness. Deveined and peeled. 500g.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$24.50</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spicy ramen with chopsticks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7y4p7zMz3mcirnWHwuXED5PJH8jW_GhD6eKISBlfQJ68HvBV8VRqmaXkHJv90Ujt6BmNJBeR0BZMQMUxGghyeVRWxD6rV3PGTkyJ1U6cQNzU9Qh-1wAsaZ-zNZWzD_LXj_J0b1ft177lDuxrFMul7Ymzaxl_FjT9XpXO7BvoNWzYwJJ5fYVD3RLp7pFAM3HeQ6wZPSaerS5AP7ztbArgW1vkfRVOwm-O44AbLzoBIABrV35Wb_D1_ncwcfRxkIGZ0IORVqGQHJ7g"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Ready-to-Eat</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Spicy Ramen Kit</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Complete kit with broth, noodles, and toppings. Ready in 5 minutes.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$9.90</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Raw salmon fillet on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm65BZgefCAvz8g_iAP0XB_brpYcRJyz2JL5RKDJ8MIsaOfbK3uHV7YwQFksWg7iASpPTib2-pFJJuIqXum9MeWf-Kw-iVoQa6lkCndRePa7HGFgYFeBya4UfxTwibVZM1Q6Sz6MuOQFlkcssYeZbPBw-N1iRmGz0xQAi3pR_CFWPk6IGjxE-60xJUEuE2ajTEnBKheCbLjcqkeMpP5IfuaMEbfD-GCbJtv0pyNRU5eW0Kt3jgOmHXuhJXUSrYU3OSztqDvrPo3mQ"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Seafood</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Atlantic Salmon Fillet</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Rich in Omega-3. Sustainably sourced and flash frozen. 250g.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$19.90</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Plate of grilled sausages" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA79y5p0qtUHuHfm-xBwRkMuaFCtTJi07VvPGfEECoFq41rDYdeSGweans2UCWXgWMnd5J0521iq2D6bUHLNoYyXpOpdUFhIc5PQ-31f4BYNdlscFT_iFVuZrw5MPBPHS5FED2X5KKiTwKTU37LNpDehUvTLyKYFmhKQUL03-24cY7aLRhu5ZLksy2c2Rp01_YDFxuxXSTril0YWGOUGeMASHYueGdfG-CCfjlrx5--CYMDZAPJ6JAchGGpZ3c0fNERRMh15yC-0w"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Finger Foods</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Cheese Cocktail Sausages</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Mini sausages infused with cheddar cheese. Great for parties. 500g.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$11.20</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Frozen sweet corn kernels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYpz-PVqZyxyUJsFwgvhjjIpqFCGFdKznyeEsiZ_GArWv3zbPScDtr8AOWj3tMSq5J6VEsQE-6demjrFtL8BHLI7knuqFMIHbJVjRLRvCMRiz9CNvhp58HCRuxZIpRHTCMyt0OiLBRAJKACMX4FnR-6Ao-cJylkoxDkTylGOB3Rn4IAP13MTOsiVxvhPuFpNWuNg748fvVeNIX3IlqQKdL23CniOn1Aj1m4n3qxB8cP63_M-Qz8ozDNz-bkVRdeqrgrSs3HcOERys"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Vegetables</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Sweet Corn Kernels</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Super sweet variety, harvested at peak freshness. 1kg pack.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$6.50</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Product Card 9 -->
+<div class="group flex flex-col bg-white dark:bg-[#1e293b] rounded-xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all duration-300">
+<div class="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fried spring rolls on plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDctdYIOsn83YSNgL5JnufBzvNA0O0YFy_AQN0uXNrXogtd36M7lm4oLyT_ASZ_HkVfQtObYbs3whSj-3JKRjPf-DRkIvEHT_Ke7LO5XvdY3DhNVc2Pn0fIvWQI4WpX40lv_jl6i7A66g_3pTOLnNQumyqZiX0Y_xhZkQgE-6NekDGL8W8LkJ0s6Jn22O00qHH1PUSMx5ZOBa1CF7Nf-eBiM1jfl15M6rsYL-bLVe8G3YWuXLouEa-vFuJBpq7551XUiuLFk6bXr2o"/>
+<button class="absolute bottom-3 right-3 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md text-gray-500 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
+<span class="material-symbols-outlined text-[20px] block">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-1 text-xs text-[#617589] dark:text-gray-400 font-medium">Finger Foods</div>
+<h3 class="text-lg font-bold text-[#111418] dark:text-white leading-tight mb-2">Vegetable Spring Rolls</h3>
+<p class="text-sm text-[#617589] dark:text-gray-400 line-clamp-2 mb-4">Crispy wrapper filled with seasoned cabbage and carrots. 20 pcs.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-xl font-bold text-primary">$8.90</span>
+<button class="bg-primary/10 hover:bg-primary text-primary hover:text-white p-2 rounded-lg transition-colors flex items-center gap-1 text-sm font-bold px-3">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                                        Add
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center mt-12 gap-2">
+<button class="flex size-10 items-center justify-center rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1e293b] text-[#111418] dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 disabled:opacity-50">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-primary text-white font-bold shadow-md">1</button>
+<button class="flex size-10 items-center justify-center rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1e293b] text-[#111418] dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 font-medium">2</button>
+<button class="flex size-10 items-center justify-center rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1e293b] text-[#111418] dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 font-medium">3</button>
+<span class="text-[#617589] px-2">...</span>
+<button class="flex size-10 items-center justify-center rounded-lg border border-[#dbe0e6] dark:border-gray-700 bg-white dark:bg-[#1e293b] text-[#111418] dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#101922] border-t border-[#f0f2f4] dark:border-gray-800 py-10">
+<div class="layout-container px-4 md:px-10 max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white mb-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">YnB Frozen Food</h2>
+</div>
+<p class="text-[#617589] dark:text-gray-400 text-sm leading-normal max-w-sm">Bringing the highest quality frozen meats, seafood, and ready-to-eat meals to your family table since 2010.</p>
+</div>
+<div>
+<h4 class="text-[#111418] dark:text-white font-bold mb-4">Shop</h4>
+<ul class="space-y-2">
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">All Products</a></li>
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">New Arrivals</a></li>
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">Best Sellers</a></li>
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">Promotions</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#111418] dark:text-white font-bold mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">Contact Us</a></li>
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">FAQ</a></li>
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">Shipping Info</a></li>
+<li><a class="text-[#617589] dark:text-gray-400 text-sm hover:text-primary" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#f0f2f4] dark:border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[#617589] dark:text-gray-500 text-xs">© 2023 YnB Frozen Food. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#617589] cursor-pointer hover:text-primary">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#617589] cursor-pointer hover:text-primary">photo_camera</span>
+<span class="material-symbols-outlined text-[#617589] cursor-pointer hover:text-primary">alternate_email</span>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

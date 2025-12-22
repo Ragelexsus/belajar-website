@@ -1,1 +1,75 @@
+.wrapper-hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 
+
+}
+
+/*page 1*/
+.hero-company{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.10);
+}
+.wrapper-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hero-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+    background-image: url("../img/homepage-1.jpg");
+    height: 30rem;
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1rem;
+    overflow: hidden;
+
+}
+.hero-wrapper::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+.hero-company .hero-wrapper .hero-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    color: white;
+    text-align: center;
+    max-width: 80%;
+    z-index: 1;
+    /*mix-blend-mode: difference;*/
+}
+.hero-company .hero-wrapper .hero-menu p, .hero-company .hero-wrapper .hero-menu h2{
+    mix-blend-mode: difference;
+}
+.hero-company .hero-wrapper .hero-menu button{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #137FEC;
+    color: white;
+    font-weight: 700;
+
+}

@@ -9,10 +9,12 @@
     outline: none;
     border: none;
     text-decoration: none;
+    /*overflow-x: hidden ;*/
 }
 body{
     background-color: white;
     color: black;
+    min-height: 500vh;
 }
 .navbar{
     background-color: rgba(255, 255, 255, 0.50);
@@ -88,12 +90,14 @@ body{
 @media (max-width: 756px) {
     html{
         font-size: 55%;
+        overflow-x: hidden;
     }
     .navbar-extra{
         display: block;
     }
     .navbar .navbar-nav{
         position:absolute;
+        /*display: none;*/
         top:100%;
         right: -100%;
         background-color: #010101;

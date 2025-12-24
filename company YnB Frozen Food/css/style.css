@@ -17,7 +17,7 @@ body{
     min-height: 500vh;
 }
 .navbar{
-    background-color: rgba(255, 255, 255, 0.50);
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: center;
     /*align-items: center;*/
@@ -115,6 +115,9 @@ body{
     .navbar .navbar-nav.active{
         right: 0;
         transition: 0.2s;
+    }
+    .hero-wrapper{
+        /*width: 0px;*/
     }
 }
 /*Handphone*/

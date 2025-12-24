@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27a9cdef-8c5e-4dc8-bc1a-a0a010c89def" name="Changes" comment="Update Menu">
+      <change afterPath="$PROJECT_DIR$/company YnB Frozen Food/img/homepage-1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website Kedai Kopi/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Website Kedai Kopi/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/css/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/css/homepage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/company YnB Frozen Food/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/company YnB Frozen Food/index.html" afterDir="false" />
@@ -43,8 +43,11 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -55,13 +58,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/company YnB Frozen Food/img" />
       <recent name="$PROJECT_DIR$/Website Kedai Kopi/img" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.29346.143" />
       </set>
     </attachedChunks>
   </component>
@@ -88,6 +92,9 @@
       <workItem from="1766146306181" duration="2607000" />
       <workItem from="1766194098233" duration="9119000" />
       <workItem from="1766210974090" duration="4044000" />
+      <workItem from="1766473644780" duration="3170000" />
+      <workItem from="1766552631086" duration="1265000" />
+      <workItem from="1766568631060" duration="4123000" />
     </task>
     <task id="LOCAL-00001" summary="Update Menu">
       <option name="closed" value="true" />

@@ -8,14 +8,26 @@
 }
 
 /*page 1*/
+
+/*ganjil*/
 .hero-company{
     display: flex;
     flex-direction: column;
     padding: 2rem;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     background-color: rgba(128, 128, 128, 0.10);
 }
+/*genap*/
+.hero-company-2{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    /*align-items: center;*/
+    background-color: white;
+}
+
 .wrapper-1{
     display: flex;
     flex-direction: column;
@@ -23,14 +35,15 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    position: relative;
+    /*position: relative;*/
 }
 .hero-wrapper{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     background-image: url("../img/homepage-1.jpg");
     height: 30rem;
    background-repeat: no-repeat;
@@ -71,5 +84,12 @@
     background-color: #137FEC;
     color: white;
     font-weight: 700;
+
+}
+
+.wrapper-2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
 }

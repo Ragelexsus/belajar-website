@@ -1,10 +1,14 @@
 import express from 'express';
 import userRoute from './router/users.js'
+import dotenv from 'dotenv';
 
+dotenv.config();
+
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use('/users', userRoute);
 
-app.listen(4000, ()=>{
-    console.log('Server started on port 4000');
+app.listen(port, ()=>{
+    console.log(`Server started on port ${port}`);
 })

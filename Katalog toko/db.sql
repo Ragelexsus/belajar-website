@@ -82,6 +82,7 @@ create table produk(
 );
 
 
-
+select * from role_admin;
+delete from role_admin;
 
 

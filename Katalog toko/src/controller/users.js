@@ -27,7 +27,7 @@ const CreateUser = async (req, res)=>{
             });
         }else{
             res.status(201).json({
-                message:"Success create role",
+                message:"Success create User",
                 data: result,
             })
         }

@@ -40,7 +40,23 @@ const CreateUser = async (req, res)=>{
     }
 }
 
+const login =async (req, res)=>{
+    const {username, password}=req.body;
+    try{
+      const data=  await usermodel.login(username, password);
+        res.json({
+            message:"Success login",
+            data: data
+        })
+    }catch (e){
+        res.status(400).json({
+            message:e.message,
+        })
+    }
+}
+
 export default {
     getalluser,
     CreateUser,
+    login
 }

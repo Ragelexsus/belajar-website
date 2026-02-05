@@ -1,5 +1,10 @@
 import pool from '../config/database.js'
 import bcrypt from 'bcrypt'
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const secret = process.env.JWT_SECRET;
 
 // Controller
 const CreateNewUser = async (username, password, role) =>{
@@ -31,6 +36,29 @@ const Getalluser = async () =>{
     try{
         const [row] = await pool.execute(`SELECT * FROM user_admin`)
         return row;
+    }catch (e){
+        throw e;
+    }
+}
+
+const login = async (username, plain_password)=>{
+    try{
+        const [row] = await pool.execute(`SELECT * FROM user_admin WHERE username=?`, [username]);
+        const data= row[0];
+
+        if (!row|| row.length == 0){
+            throw new Error("User Not Found");
+        }else{
+            const checkpasswords = checkpassword(plain_password, data.password);
+            if(!checkpasswords){
+                throw new Error("Username or passwords incorrect");
+            }else{
+                console.info("Berhasil Login")
+                return row
+            }
+        }
+
+
     }catch (e){
         throw e;
     }
@@ -74,8 +102,20 @@ const checkUser= async (username) =>{
     }
 }
 
+const checkpassword = async (plain_password, password)=>{
+    const ismatch = await bcrypt.compare(plain_password, password);
+    if(ismatch){
+        console.log(`info ${ismatch}`)
+        return true
+    }else{
+        console.log(`info ${ismatch}`)
+        return false
+    }
+}
+
 export default{
     CreateNewUser,
     Getalluser,
-    searchrole
+    searchrole,
+    login
 }

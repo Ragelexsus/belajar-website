@@ -7,9 +7,11 @@ dotenv.config();
 const getalluser = async (req, res)=>{
     try{
         const row  = await  usermodel.Getalluser();
+        const data_token = [req.decoded]
         res.json({
             message :"Success get role",
             data: row,
+            token: data_token
         });
     }catch (e){
         res.status(400).json({
@@ -49,12 +51,12 @@ const login =async (req, res)=>{
     try{
       const data=  await usermodel.login(username, password);
       const data_user = data[0];
-      const payload = {id: data_user.user_id, id_role: data_user.id_role};
-
-      const token = jwt.sign()
+      const payload = {id_user: data_user.user_id, id_role: data_user.id_role};
+      const token = jwtToken.sign(payload, process.env.JWT_KEY_RAHASIA, {expiresIn: '1h'});
         res.json({
             message:"Success login",
-            data: data
+            data: data,
+            token: token,
         });
     }catch (e){
         res.status(400).json({

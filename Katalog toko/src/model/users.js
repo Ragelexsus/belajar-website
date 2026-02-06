@@ -49,7 +49,7 @@ const login = async (username, plain_password)=>{
         if (!row|| row.length == 0){
             throw new Error("User Not Found");
         }else{
-            const checkpasswords = checkpassword(plain_password, data.password);
+            const checkpasswords = await checkpassword(plain_password, data.password);
             if(!checkpasswords){
                 throw new Error("Username or passwords incorrect");
             }else{
